@@ -154,6 +154,7 @@ The site consists of 5 files served as static HTML/CSS:
 | `houses.html` | Houses & Lore page |
 | `timeline.html` | Episodes timeline with spoiler system |
 | `style.css` | Shared stylesheet for all pages |
+| `images/...` | Houses sigils |
 
 All files are served from `/var/www/html/`
 ## Transferring Files to the VM
@@ -166,6 +167,11 @@ scp -i ~/Downloads/ict171-key.pem ~/Downloads/files/index.html \
 ~/Downloads/files/timeline.html \
 ~/Downloads/files/style.css \
 azureuser@20.2.235.169:~/
+```
+
+## Transferring the Images Folder
+```bash
+scp -i ~/Downloads/ict171-key.pem -r ~/Desktop/images azureuser@20.2.235.169:~/
 ```
 
 ## Moving Files to the Web Root
