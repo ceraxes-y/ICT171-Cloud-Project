@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Houses — ThroneLore</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav>
+    <a href="index.html" class="logo">ThroneLore</a>
+    <ul>
+      <li><a href="characters.html">Characters</a></li>
+      <li><a href="houses.html" class="active">Houses</a></li>
+      <li><a href="timeline.html">Timeline</a></li>
+    </ul>
+    <div class="season-selector">
+      <label>Season:</label>
+      <select id="season-nav" onchange="setSeason(this.value)">
+        <option value="8">All</option>
+        <option value="1">S1</option>
+        <option value="2">S2</option>
+        <option value="3">S3</option>
+        <option value="4">S4</option>
+        <option value="5">S5</option>
+        <option value="6">S6</option>
+        <option value="7">S7</option>
+        <option value="8">S8</option>
+      </select>
+    </div>
+  </nav>
+
+  <div class="page-header">
+    <h1>Houses &amp; Lore</h1>
+    <p>The great families whose rivalries shaped a continent.</p>
+  </div>
+
+  <div class="wrap">
+
+    <div class="house-card">
+      <div class="house-sigil">
+        <img src="images/stark.png" alt="Stark" />
+        <p class="hname">House Stark</p>
+        <small>The North</small>
+      </div>
+      <div class="house-body">
+        <h2>House Stark</h2>
+        <p class="words">"Winter is Coming"</p>
+        <p>Lords of Winterfell for thousands of years. Their words are not a boast — they are a warning. Defined by honour, duty, and a deep bond with the land they protect.</p>
+        <h4>Key Members</h4>
+        <ul>
+          <li><strong>Ned Stark</strong> — Lord of Winterfell, Hand of the King</li>
+          <li><strong>Robb Stark</strong> — King in the North</li>
+          <li><strong>Jon Snow</strong> — Lord Commander, King in the North</li>
+          <li><strong>Sansa Stark</strong> — Queen in the North</li>
+          <li><strong>Arya Stark</strong> — Faceless assassin</li>
+          <li><strong>Bran Stark</strong> — The Three-Eyed Raven</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="house-card">
+      <div class="house-sigil">
+        <img src="images/lannister.png" alt="Lannister" />
+        <p class="hname">House Lannister</p>
+        <small>The Westerlands</small>
+      </div>
+      <div class="house-body">
+        <h2>House Lannister</h2>
+        <p class="words">"Hear Me Roar" / "A Lannister Always Pays His Debts"</p>
+        <p>The wealthiest family in Westeros. Their gold has bought thrones, silence, and wars. Power built on ruthlessness and fear.</p>
+        <h4>Key Members</h4>
+        <ul>
+          <li><strong>Tywin Lannister</strong> — Lord of Casterly Rock, patriarch</li>
+          <li><strong>Cersei Lannister</strong> — Queen of the Seven Kingdoms</li>
+          <li><strong>Jaime Lannister</strong> — The Kingslayer</li>
+          <li><strong>Tyrion Lannister</strong> — The Imp, Hand of the Queen</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="house-card">
+      <div class="house-sigil">
+        <img src="images/targaryen.png" alt="Targaryen" />
+        <p class="hname">House Targaryen</p>
+        <small>Dragonstone</small>
+      </div>
+      <div class="house-body">
+        <h2>House Targaryen</h2>
+        <p class="words">"Fire and Blood"</p>
+        <p>For nearly three centuries, the Targaryens ruled with dragons. When the dragons died, the dynasty rotted from within until Robert's Rebellion ended their reign.</p>
+        <h4>Key Members</h4>
+        <ul>
+          <li><strong>Aerys II</strong> — The Mad King</li>
+          <li><strong>Rhaegar Targaryen</strong> — Crown Prince, father of Jon Snow</li>
+          <li><strong>Daenerys Targaryen</strong> — Mother of Dragons</li>
+          <li><strong>Jon Snow</strong> — Born Aegon Targaryen, true heir</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="house-card">
+      <div class="house-sigil">
+        <img src="images/baratheon.png" alt="Baratheon" />
+        <p class="hname">House Baratheon</p>
+        <small>The Stormlands</small>
+      </div>
+      <div class="house-body">
+        <h2>House Baratheon</h2>
+        <p class="words">"Ours is the Fury"</p>
+        <p>Founded on rebellion when Robert overthrew the Mad King. Fractured after his death and nearly destroyed by the War of the Five Kings.</p>
+        <h4>Key Members</h4>
+        <ul>
+          <li><strong>Robert Baratheon</strong> — King of the Seven Kingdoms</li>
+          <li><strong>Stannis Baratheon</strong> — Lord of Dragonstone</li>
+          <li><strong>Renly Baratheon</strong> — Lord of Storm's End</li>
+          <li><strong>Joffrey Baratheon</strong> — King, Robert's supposed heir</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+    <p class="logo">ThroneLore</p>
+    <p>Fan site built for ICT171 — Murdoch University.</p>
+    <p>Not affiliated with HBO or George R.R. Martin.</p>
+  </footer>
+
+  <script>
+    function setSeason(val) { sessionStorage.setItem('gotSeason', val); }
+    const saved = sessionStorage.getItem('gotSeason');
+    if (saved) document.getElementById('season-nav').value = saved;
+  </script>
+</body>
+</html>

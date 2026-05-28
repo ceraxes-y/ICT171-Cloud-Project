@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Characters — ThroneLore</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav>
+    <a href="index.html" class="logo">ThroneLore</a>
+    <ul>
+      <li><a href="characters.html" class="active">Characters</a></li>
+      <li><a href="houses.html">Houses</a></li>
+      <li><a href="timeline.html">Timeline</a></li>
+    </ul>
+    <div class="season-selector">
+      <label>Season:</label>
+      <select id="season-nav" onchange="setSeason(this.value)">
+        <option value="8">All</option>
+        <option value="1">S1</option>
+        <option value="2">S2</option>
+        <option value="3">S3</option>
+        <option value="4">S4</option>
+        <option value="5">S5</option>
+        <option value="6">S6</option>
+        <option value="7">S7</option>
+        <option value="8">S8</option>
+      </select>
+    </div>
+  </nav>
+
+  <div class="page-header">
+    <h1>Characters</h1>
+    <p>The heroes, villains, and everyone in between.</p>
+  </div>
+
+  <div class="wrap">
+
+    <h2 class="section-title">House Stark</h2>
+    <div class="grid">
+      <div class="char-card">
+        <h3>Ned Stark</h3>
+        <p class="sub">House Stark</p>
+        <p class="role">Lord of Winterfell, Hand of the King</p>
+        <p class="desc">The honourable Lord of Winterfell drawn into King's Landing politics. His sense of duty defines and costs him everything.</p>
+        <p class="quote">The man who passes the sentence should swing the sword.</p>
+        <span class="tag green">Protagonist</span>
+      </div>
+      <div class="char-card">
+        <h3>Jon Snow</h3>
+        <p class="sub">House Stark / Targaryen</p>
+        <p class="role">Lord Commander, King in the North</p>
+        <p class="desc">Raised as Ned's bastard, Jon rises from the Night's Watch to become one of Westeros' most pivotal figures.</p>
+        <p class="quote">I am the sword in the darkness.</p>
+        <span class="tag green">Protagonist</span>
+      </div>
+      <div class="char-card">
+        <h3>Sansa Stark</h3>
+        <p class="sub">House Stark</p>
+        <p class="role">Queen in the North</p>
+        <p class="desc">Begins naive, forged through suffering into one of the sharpest political minds in Westeros.</p>
+        <p class="quote">I am a slow learner, it's true. But I learn.</p>
+        <span class="tag green">Protagonist</span>
+      </div>
+      <div class="char-card">
+        <h3>Arya Stark</h3>
+        <p class="sub">House Stark</p>
+        <p class="role">Faceless Assassin</p>
+        <p class="desc">A wolf who refused to be a lamb. Trained by the Faceless Men, driven by a list of names she recites every night.</p>
+        <p class="quote">A girl is Arya Stark of Winterfell. And I'm going home.</p>
+        <span class="tag green">Protagonist</span>
+      </div>
+    </div>
+
+    <h2 class="section-title">House Lannister</h2>
+    <div class="grid">
+      <div class="char-card">
+        <h3>Cersei Lannister</h3>
+        <p class="sub">House Lannister</p>
+        <p class="role">Queen of the Seven Kingdoms</p>
+        <p class="desc">She loves her children absolutely and her enemies not at all. A life spent fighting a world that underestimates her.</p>
+        <p class="quote">When you play the game of thrones, you win or you die.</p>
+        <span class="tag red">Antagonist</span>
+      </div>
+      <div class="char-card">
+        <h3>Tyrion Lannister</h3>
+        <p class="sub">House Lannister</p>
+        <p class="role">Hand of the Queen</p>
+        <p class="desc">The Imp — the cleverest man in most rooms. Navigates politics with a wine cup and a sharp tongue.</p>
+        <p class="quote">I drink and I know things.</p>
+        <span class="tag green">Protagonist</span>
+      </div>
+      <div class="char-card">
+        <h3>Jaime Lannister</h3>
+        <p class="sub">House Lannister</p>
+        <p class="role">The Kingslayer</p>
+        <p class="desc">Labelled dishonourable for the one act that saved thousands. One of the show's most complex moral journeys.</p>
+        <p class="quote">There are no men like me. There's only me.</p>
+        <span class="tag green">Protagonist</span>
+      </div>
+    </div>
+
+    <h2 class="section-title">House Targaryen</h2>
+    <div class="grid">
+      <div class="char-card">
+        <h3>Daenerys Targaryen</h3>
+        <p class="sub">House Targaryen</p>
+        <p class="role">Mother of Dragons, Breaker of Chains</p>
+        <p class="desc">The last of her dragon-riding dynasty. She crosses the sea, wins an army, and claims her destiny.</p>
+        <p class="quote">I'm going to break the wheel.</p>
+        <span class="tag green">Protagonist</span>
+      </div>
+    </div>
+
+    <h2 class="section-title">Other Key Figures</h2>
+    <div class="grid">
+      <div class="char-card">
+        <h3>Petyr Baelish</h3>
+        <p class="sub">House Baelish</p>
+        <p class="role">Littlefinger</p>
+        <p class="desc">He didn't want power — he wanted the game. Climbed from nothing using chaos as a ladder.</p>
+        <p class="quote">Chaos isn't a pit. Chaos is a ladder.</p>
+        <span class="tag red">Antagonist</span>
+      </div>
+      <div class="char-card">
+        <h3>Jorah Mormont</h3>
+        <p class="sub">House Mormont</p>
+        <p class="role">Advisor to Daenerys</p>
+        <p class="desc">Exiled knight and Daenerys' most devoted protector. His loyalty is absolute and his love unreturned.</p>
+        <p class="quote">You have a good claim, a true claim.</p>
+        <span class="tag green">Protagonist</span>
+      </div>
+      <div class="char-card">
+        <h3>Sandor Clegane</h3>
+        <p class="sub">House Clegane</p>
+        <p class="role">The Hound</p>
+        <p class="desc">Scarred and brutal, yet acts with more decency than most knights who wear a cloak.</p>
+        <p class="quote">Fuck the King.</p>
+        <span class="tag">Complex</span>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+    <p class="logo">ThroneLore</p>
+    <p>Fan site built for ICT171 — Murdoch University.</p>
+    <p>Not affiliated with HBO or George R.R. Martin.</p>
+  </footer>
+
+  <script>
+    function setSeason(val) { sessionStorage.setItem('gotSeason', val); }
+    const saved = sessionStorage.getItem('gotSeason');
+    if (saved) document.getElementById('season-nav').value = saved;
+  </script>
+</body>
+</html>

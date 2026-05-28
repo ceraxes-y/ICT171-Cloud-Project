@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Timeline — ThroneLore</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav>
+    <a href="index.html" class="logo">ThroneLore</a>
+    <ul>
+      <li><a href="characters.html">Characters</a></li>
+      <li><a href="houses.html">Houses</a></li>
+      <li><a href="timeline.html" class="active">Timeline</a></li>
+    </ul>
+    <div class="season-selector">
+      <label>Season:</label>
+      <select id="season-nav" onchange="applySeason(this.value)">
+        <option value="8">All</option>
+        <option value="1">S1</option>
+        <option value="2">S2</option>
+        <option value="3">S3</option>
+        <option value="4">S4</option>
+        <option value="5">S5</option>
+        <option value="6">S6</option>
+        <option value="7">S7</option>
+        <option value="8">S8</option>
+      </select>
+    </div>
+  </nav>
+
+  <div class="page-header">
+    <h1>Timeline</h1>
+    <p>Eight seasons. Select your season above to avoid spoilers.</p>
+  </div>
+
+  <div class="wrap">
+
+    <div class="spoiler-bar">
+      <span>Your progress:</span>
+      <div class="prog-wrap">
+        <div class="prog-fill" id="prog-fill" style="width:100%"></div>
+      </div>
+      <span id="prog-label">All 8 seasons</span>
+    </div>
+
+    <div class="timeline">
+
+      <div class="t-entry" data-season="1">
+        <div class="t-box">
+          <div class="lock-overlay">
+            <span class="licon">🔒</span>
+            <span class="lmsg">Spoilers ahead</span>
+          </div>
+          <h3>Season 1 — Winter is Coming (2011)</h3>
+          <p>The Stark family is pulled into King's Landing politics. Ned is appointed Hand of the King. Daenerys finds her strength across the sea.</p>
+          <ul>
+            <li>Ned Stark arrives in King's Landing</li>
+            <li>Jon Snow joins the Night's Watch</li>
+            <li>Daenerys receives three dragon eggs</li>
+            <li>Ned Stark is executed at the Sept of Baelor</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="t-entry" data-season="2">
+        <div class="t-box">
+          <div class="lock-overlay">
+            <span class="licon">🔒</span>
+            <span class="lmsg">Spoilers ahead</span>
+          </div>
+          <h3>Season 2 — A Clash of Kings (2012)</h3>
+          <p>Five kings claim the Iron Throne. Westeros tears itself apart. Tyrion serves as Acting Hand of the King.</p>
+          <ul>
+            <li>The War of the Five Kings begins</li>
+            <li>Renly Baratheon is assassinated</li>
+            <li>Theon Greyjoy seizes Winterfell</li>
+            <li>The Battle of the Blackwater</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="t-entry" data-season="3">
+        <div class="t-box">
+          <div class="lock-overlay">
+            <span class="licon">🔒</span>
+            <span class="lmsg">Spoilers ahead</span>
+          </div>
+          <h3>Season 3 — A Storm of Swords (2013)</h3>
+          <p>Robb Stark's campaign fractures. Daenerys liberates Astapor. At the Twins, the most shocking event in the series takes place.</p>
+          <ul>
+            <li>Jaime Lannister loses his sword hand</li>
+            <li>Daenerys frees the Unsullied</li>
+            <li>The Red Wedding — Robb and Catelyn Stark are murdered</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="t-entry" data-season="4">
+        <div class="t-box">
+          <div class="lock-overlay">
+            <span class="licon">🔒</span>
+            <span class="lmsg">Spoilers ahead</span>
+          </div>
+          <h3>Season 4 — The Viper and the Mountain (2014)</h3>
+          <p>Joffrey's wedding turns lethal. Tyrion is tried for murder. Oberyn Martell arrives seeking justice for his sister.</p>
+          <ul>
+            <li>Joffrey dies at the Purple Wedding</li>
+            <li>Trial by Combat — Oberyn vs. the Mountain</li>
+            <li>Tyrion kills Tywin and flees King's Landing</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="t-entry" data-season="5">
+        <div class="t-box">
+          <div class="lock-overlay">
+            <span class="licon">🔒</span>
+            <span class="lmsg">Spoilers ahead</span>
+          </div>
+          <h3>Season 5 — A Dance with Dragons (2015)</h3>
+          <p>Cersei empowers the Faith Militant with consequences she cannot control. Arya trains in Braavos. Jon pays the ultimate price.</p>
+          <ul>
+            <li>Cersei is imprisoned by the Faith Militant</li>
+            <li>Sansa is forced to marry Ramsay Bolton</li>
+            <li>Jon Snow is stabbed to death by the Night's Watch</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="t-entry" data-season="6">
+        <div class="t-box">
+          <div class="lock-overlay">
+            <span class="licon">🔒</span>
+            <span class="lmsg">Spoilers ahead</span>
+          </div>
+          <h3>Season 6 — The Winds of Winter (2016)</h3>
+          <p>Jon Snow is resurrected. Bran discovers Jon's true parentage. The Battle of the Bastards. Cersei destroys the Sept of Baelor.</p>
+          <ul>
+            <li>Jon Snow is resurrected by Melisandre</li>
+            <li>R+L=J — Jon's true parentage confirmed</li>
+            <li>Battle of the Bastards — Jon retakes Winterfell</li>
+            <li>Cersei destroys the Sept of Baelor with wildfire</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="t-entry" data-season="7">
+        <div class="t-box">
+          <div class="lock-overlay">
+            <span class="licon">🔒</span>
+            <span class="lmsg">Spoilers ahead</span>
+          </div>
+          <h3>Season 7 — The Dragon and the Wolf (2017)</h3>
+          <p>Daenerys arrives in Westeros. Jon and Daenerys meet at Dragonstone. An expedition beyond the Wall ends in disaster.</p>
+          <ul>
+            <li>Jon and Daenerys meet at Dragonstone</li>
+            <li>Viserion killed and reanimated by the Night King</li>
+            <li>Littlefinger executed by Arya</li>
+            <li>The Night King destroys the Wall</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="t-entry" data-season="8">
+        <div class="t-box">
+          <div class="lock-overlay">
+            <span class="licon">🔒</span>
+            <span class="lmsg">Spoilers ahead</span>
+          </div>
+          <h3>Season 8 — The Long Night (2019)</h3>
+          <p>The final season. The living face the Army of the Dead. Daenerys burns King's Landing. The wheel breaks.</p>
+          <ul>
+            <li>Arya kills the Night King</li>
+            <li>Daenerys burns King's Landing</li>
+            <li>Jon kills Daenerys in the throne room</li>
+            <li>Bran Stark chosen as King of the Six Kingdoms</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <footer>
+    <p class="logo">ThroneLore</p>
+    <p>Fan site built for ICT171 — Murdoch University.</p>
+    <p>Not affiliated with HBO or George R.R. Martin.</p>
+  </footer>
+
+  <script>
+    // applySeason: called when the user selects a season from the dropdown
+    function applySeason(val) {
+
+      // Save selection in sessionStorage so it persists across pages
+      sessionStorage.setItem('gotSeason', val);
+
+      const max = parseInt(val);
+
+      // Loop through all timeline entries
+      document.querySelectorAll('.t-entry').forEach(function(item) {
+        var s = parseInt(item.getAttribute('data-season'));
+
+        // Unlock seasons already watched, lock the rest
+        if (s <= max) {
+          item.classList.remove('locked');
+        } else {
+          item.classList.add('locked');
+        }
+      });
+
+      // Update progress bar
+      document.getElementById('prog-fill').style.width = (max / 8 * 100) + '%';
+      document.getElementById('prog-label').textContent = max === 8 ? 'All 8 seasons' : 'Season ' + max + ' of 8';
+    }
+
+    // On page load: restore saved season or show all
+    var saved = sessionStorage.getItem('gotSeason') || '8';
+    document.getElementById('season-nav').value = saved;
+    applySeason(saved);
+  </script>
+
+</body>
+</html>

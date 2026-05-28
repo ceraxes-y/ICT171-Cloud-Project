@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ThroneLore</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav>
+    <span class="logo">ThroneLore</span>
+    <ul>
+      <li><a href="characters.html">Characters</a></li>
+      <li><a href="houses.html">Houses</a></li>
+      <li><a href="timeline.html">Timeline</a></li>
+    </ul>
+    <div class="season-selector">
+      <label>Season:</label>
+      <select id="season-nav" onchange="setSeason(this.value)">
+        <option value="8">All</option>
+        <option value="1">S1</option>
+        <option value="2">S2</option>
+        <option value="3">S3</option>
+        <option value="4">S4</option>
+        <option value="5">S5</option>
+        <option value="6">S6</option>
+        <option value="7">S7</option>
+        <option value="8">S8</option>
+      </select>
+    </div>
+  </nav>
+
+  <div class="hero">
+    <p class="tagline">A Game of Thrones Fan Site</p>
+    <h1>When you play the game of thrones,<br>you win or you die.</h1>
+    <p class="author">— Cersei Lannister</p>
+    <a href="characters.html" class="btn btn-filled">Characters</a>
+    <a href="houses.html" class="btn">Houses & Lore</a>
+  </div>
+
+  <div class="wrap">
+    <h2 class="section-title">Explore the Lore</h2>
+    <div class="preview-grid">
+      <div class="preview-card">
+        <div class="icon">⚔</div>
+        <h3>Characters</h3>
+        <p>Every major character — their house, story, and most memorable quotes.</p>
+        <a href="characters.html" class="btn">Explore</a>
+      </div>
+      <div class="preview-card">
+        <div class="icon">🏰</div>
+        <h3>Houses & Lore</h3>
+        <p>The great houses of Westeros, their sigils, words, and key members.</p>
+        <a href="houses.html" class="btn">Explore</a>
+      </div>
+      <div class="preview-card">
+        <div class="icon">📜</div>
+        <h3>Timeline</h3>
+        <p>Season by season — with spoiler protection up to where you are.</p>
+        <a href="timeline.html" class="btn">Explore</a>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p class="logo">ThroneLore</p>
+    <p>Fan site built for ICT171 — Murdoch University.</p>
+    <p>Not affiliated with HBO or George R.R. Martin.</p>
+  </footer>
+
+  <script>
+    function setSeason(val) { sessionStorage.setItem('gotSeason', val); }
+    const saved = sessionStorage.getItem('gotSeason');
+    if (saved) document.getElementById('season-nav').value = saved;
+  </script>
+</body>
+</html>
