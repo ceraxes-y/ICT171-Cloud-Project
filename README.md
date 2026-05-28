@@ -21,6 +21,6 @@ A Game of Thrones interactive web platform hosted on a cloud server. The site al
 - [x] Nginx installed and running
 - [x] Domain configured (thronelore.site)
 - [x] HTTPS enabled via Let's Encrypt
-- [ ] Full site with characters, houses and quiz
-- [ ] Bash scripting component
+- [x] Full site with characters, houses
+- [x] Bash scripting component
 - [ ] Video explainer
